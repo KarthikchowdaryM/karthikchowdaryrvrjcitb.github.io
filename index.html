@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Moving balls for decoration -->
+  <div class="yellow-ball ball1"></div>
+  <div class="yellow-ball ball2"></div>
+  <div class="yellow-ball ball3"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="#home">Karthik Chowdary</a></h1>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#interested">Interested In</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <img src="bg1.jpg" alt="Profile Picture" class="profile-image">
+      <h2>Hello, I'm</h2>
+      <h1>Morasa Karthik Chowdary</h1>
+      <p>An IT Student passionate about web and app design.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+      <p>Phone: <strong>9014213240</strong></p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm from Addanki, and I am deeply interested in web design and app design. As an IT student, I enjoy creating visually appealing and user-friendly interfaces.</p>
+      <a href="cv.pdf" download class="download-cv">Download CV</a>
+    </div>
+  </section>
+
+  <!-- Interested In Section -->
+  <section id="interested" class="interested">
+    <div class="container">
+      <h2>Interested In</h2>
+      <div class="interested-grid">
+        <div class="interested-item">
+          <i class="fas fa-laptop-code fa-3x"></i>
+          <h3>Web Design</h3>
+          <p>I love designing responsive, user-friendly websites that help solve business problems and create delightful user experiences.</p>
+        </div>
+        <div class="interested-item">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+          <h3>App Design</h3>
+          <p>Creating mobile apps that are simple yet functional is my passion. I aim to build clean, intuitive interfaces for all users.</p>
+        </div>
+        <div class="interested-item">
+          <i class="fab fa-aws fa-3x"></i>
+          <h3>AWS</h3>
+          <p>Amazon Web Services (AWS) is where I deploy cloud solutions, enabling secure, scalable infrastructure for various applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Education Section -->
+<section class="education">
+  <h2><strong>Education</strong></h2>
+  <div class="container">
+    <div class="education-item">
+      <i class="fas fa-school"></i>
+      <h3>10th Class</h3>
+      <p>From Sri Chaitanya School (Addanki)</p>
+    </div>
+    <div class="education-item">
+      <i class="fas fa-graduation-cap"></i>
+      <h3>Intermediate</h3>
+      <p>From Arka Junior College (Guntur)</p>
+    </div>
+    <div class="education-item">
+      <i class="fas fa-laptop-code"></i>
+      <h3>B.Tech</h3>
+      <p>Studying at RVRJCC (Chowdavaram)</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Favorites Section -->
+  <section id="favorites" class="favorites">
+    <div class="container">
+      <h2>Favorites</h2>
+      <div class="favorites-grid">
+        <div class="favorites-item">
+          <a href="https://en.wikipedia.org/wiki/N._T._Rama_Rao" target="_blank">
+            <img src="srntr.jpg" alt="SR NTR" class="fav-image">
+          </a>
+          <p>SR NTR was a legendary actor and politician in Andhra Pradesh, revered for his iconic roles and leadership.</p>
+        </div>
+        <div class="favorites-item">
+          <a href="https://en.wikipedia.org/wiki/N._Chandrababu_Naidu" target="_blank">
+            <img src="cbn.jpg" alt="Nara Chandrababu Naidu" class="fav-image">
+          </a>
+          <p>Nara Chandrababu Naidu is a visionary politician and former Chief Minister of Andhra Pradesh, known for his development policies.</p>
+        </div>
+        <div class="favorites-item">
+          <a href="https://en.wikipedia.org/wiki/N._T._Rama_Rao_Jr." target="_blank">
+            <img src="jrntr.jpg" alt="JR NTR" class="fav-image">
+          </a>
+          <p>JR NTR, a versatile actor, has captivated audiences with his powerful performances. 'Devara' is one of his most anticipated movies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Contact Info with Icons -->
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> morasakarthik981@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 9014213240</p>
+        <a href="https://www.instagram.com/__karthikuuuuu?igsh=cGRucGFtMXR2czU5" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Morasa Karthik Chowdary. All Rights Reserved.</p>
+    <p>Designed and developed by Karthik Chowdary</p>
+  </footer>
+</body>
+</html>
